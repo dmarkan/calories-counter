@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brojač kalorija</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="drnau.png" alt="drnau" class="image">
+        <h1>Brojač kalorija</h1>
+        <p>Jednostavno izgovori sastojke i količine da bi pratio svoje kalorije!</p>
+        <button class="start-button" onclick="startListening()">Govori</button>
+        <button class="clear-button" onclick="clearData()">Obriši sve</button>
+        <button class="undo-button" onclick="deleteLastIngredient()">Obriši poslednji</button>
+
+        <div id="resultMessage" class="result">
+            Ukupno kalorija: 0 kalorija. Sastojci: 
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
